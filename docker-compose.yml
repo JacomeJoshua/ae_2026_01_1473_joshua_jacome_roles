@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: parking_roles_db
+    environment:
+      POSTGRES_DB: parkingdb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - parking_roles_data:/var/lib/postgresql/data
+
+volumes:
+  parking_roles_data:
