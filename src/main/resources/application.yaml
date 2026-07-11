@@ -22,7 +22,7 @@ spring:
           #
           # 👉 En el DEBER (homework_roles.md) reemplazarás esto por el issuer-uri de TU PROPIO
           #    User Pool, para poder crear los grupos ADMIN/USER y hacer autorización por roles.
-          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_yzwNALI2A
+          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_soRV3sM2X
 
 server:
   port: 8787

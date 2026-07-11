@@ -25,6 +25,7 @@ dependencies {
 	// OAuth2 Resource Server (nombre renombrado en Spring Boot 4). Valida el JWT de Cognito
 	// y arrastra Spring Security de forma transitiva.
 	implementation("org.springframework.boot:spring-boot-starter-security-oauth2-resource-server")
+	
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("tools.jackson.module:jackson-module-kotlin")
 	// PostgreSQL en runtime (la BD se levanta con docker-compose).

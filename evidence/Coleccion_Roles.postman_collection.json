@@ -1,0 +1,90 @@
+{
+  "info": {
+    "_postman_id": "d0f91d50-1f12-4c4a-a5af-1d9be541d2c9",
+    "name": "Coleccion_Roles",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55411787",
+    "_collection_link": "https://go.postman.co/collection/55411787-d0f91d50-1f12-4c4a-a5af-1d9be541d2c9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "autorizado",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0ib7}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\": \"A-101\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/parking-spaces",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8787",
+          "path": [
+            "parking-spaces"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "no autorizado",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\": \"A-101\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8787/parking-spaces",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8787",
+          "path": [
+            "parking-spaces"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_password_1cp9",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0ib7",
+      "secret": true
+    }
+  ]
+}
